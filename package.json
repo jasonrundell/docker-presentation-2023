@@ -1,9 +1,8 @@
 {
-  "name": "reveal.js",
-  "version": "4.4.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "https://revealjs.com",
-  "subdomain": "revealjs",
+  "name": "docker-presentation-2023",
+  "version": "1.0.0",
+  "description": "A reveal.js presentation on Docker for local development: What is Docker, Benefits, What comes after Docker, and Best Practices.",
+  "homepage": "https://jasonrundell.com/docker",
   "main": "dist/reveal.js",
   "module": "dist/reveal.esm.js",
   "license": "MIT",
@@ -14,13 +13,13 @@
     "format": "prettier --write ./**/*.{js,jsx,scss,css}"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "https://hakim.se"
+    "name": "Jason Rundell",
+    "email": "jason.rundell@gmail.com",
+    "web": "https://jasonrundell.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/jasonrundell/docker-presentation-2023.git"
   },
   "keywords": [
     "reveal",
