@@ -22,9 +22,6 @@
     "type": "git",
     "url": "git://github.com/hakimel/reveal.js.git"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "keywords": [
     "reveal",
     "slides",
