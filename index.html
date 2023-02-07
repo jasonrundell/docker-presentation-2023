@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Docker Presentation: Local Development</title>
+
+    <meta
+      name="description"
+      content="A reveal.js presentation on Docker for local development: What is Docker, Benefits, What comes after Docker, and Best Practices."
+    />
+    <meta name="author" content="Jason Rundell" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <a href="https://www.docker.com/">
+            <img
+              src="images/horizontal-logo-monochromatic-white.webp"
+              alt=""
+              style="
+                height: 180px;
+                margin: 0 auto 4rem auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+          </a>
+          <h3>Docker for Local Development</h3>
+          <p style="text-align: center">
+            <small
+              >Presentation by
+              <a href="https://jasonrundell.com">Jason Rundell</a></small
+            >
+          </p>
+          <p style="text-align: center">
+            <small>Using <a href="https://revealjs.com">reveal.js</a></small>
+          </p>
+        </section>
+
+        <section>
+          <h2>Introduction</h2>
+          <p>
+            Docker is an open-source platform for automating the deployment,
+            scaling, and management of applications.
+          </p>
+          <p>
+            In recent years, Docker has gained popularity in the development
+            community for its ability to simplify local development
+            environments.
+          </p>
+        </section>
+
+        <section>
+          <h2>What is Docker?</h2>
+          <p>
+            Docker is a containerization platform that allows developers to
+            package an application and its dependencies into a single unit,
+            called a container.
+          </p>
+          <p>
+            Containers are isolated from the host system and can run on any
+            environment that has Docker installed, making it easier to move
+            applications between different systems.
+          </p>
+        </section>
+
+        <section>
+          <section>
+            <h2>Benefits of using Docker for Local Development</h2>
+          </section>
+          <section>
+            <h2>Consistent Development Environments</h2>
+            <p>
+              Docker allows developers to create a consistent and predictable
+              environment for their applications, eliminating the "it works on
+              my machine" problem.
+            </p>
+            <p>
+              This consistency makes it easier to collaborate with other
+              developers and reduces the time spent resolving
+              environment-related issues.
+            </p>
+          </section>
+          <section>
+            <h2>Easy Configuration and Deployment</h2>
+            <p>
+              Docker provides an easy way to configure and deploy applications,
+              making it easier to manage dependencies and configurations.
+            </p>
+            <p>
+              Dockerfiles allow developers to automate the process of building
+              images, which can be used to deploy the same environment on
+              multiple systems.
+            </p>
+          </section>
+          <section>
+            <h2>Improved Resource Management</h2>
+            <p>
+              Docker containers are isolated from the host system, which means
+              that applications running inside containers can't interfere with
+              each other.
+            </p>
+            <p>
+              This makes it easier to manage system resources, reducing the risk
+              of performance issues and improving stability.
+            </p>
+          </section>
+          <section>
+            <h2>Reduced Overhead</h2>
+            <p>
+              Docker containers are lightweight and don't require a full virtual
+              machine, making it faster and more efficient than traditional
+              virtualization methods.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Docker is a gateway</h2>
+          </section>
+          <section>
+            <a href="https://www.docker.com/">
+              <img
+                src="images/kubernetes.png"
+                alt=""
+                style="
+                  height: 180px;
+                  margin: 0 auto 4rem auto;
+                  background: transparent;
+                "
+                class="demo-logo"
+              />
+            </a>
+            <h2>Kubernetes</h2>
+            <p>
+              Kubernetes is an open-source platform for automating the
+              deployment, scaling, and management of containerized applications.
+              It works well with Docker and can be used to manage large-scale
+              deployments across multiple systems.
+            </p>
+          </section>
+          <section>
+            <h2>Serverless Computing</h2>
+            <p>
+              Serverless computing is a cloud-based model in which the cloud
+              provider manages the infrastructure, allowing developers to focus
+              on writing code. Serverless computing can be used to build and
+              deploy applications quickly and cost-effectively.
+            </p>
+          </section>
+          <section>
+            <h2>Infrastructure as Code (IAC)</h2>
+            <p>
+              Infrastructure as code (IAC) is a method of managing
+              infrastructure through code, rather than manual configuration.
+              This can be done using tools such as <strong>Terraform</strong>,
+              which allows teams to automate the deployment and management of
+              their infrastructure.
+            </p>
+          </section>
+          <section>
+            <h2>Continuous Integration/Continuous Deployment (CI/CD)</h2>
+            <p>
+              CI/CD is a software development practice in which code changes are
+              automatically built, tested, and deployed to production. This
+              allows teams to deliver new features and bug fixes faster and with
+              greater confidence.
+            </p>
+          </section>
+          <section>
+            <h2>Microservices Architecture</h2>
+            <p>
+              Microservices architecture is a method of building applications as
+              a collection of small, independent services, rather than a single,
+              monolithic application. This can be used to improve scalability,
+              maintainability, and resilience.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Best practices teams use with Docker</h2>
+          </section>
+          <section>
+            <h2>Use Official Images</h2>
+            <p>
+              The best way to get started with Docker is to use official images
+              from Docker Hub. These images are maintained by the PHP community
+              and are guaranteed to work with your application.
+            </p>
+          </section>
+          <section>
+            <h2>Keep Containers Small</h2>
+            <p>
+              It's a good practice to keep your containers as small as possible.
+              This makes it easier to manage your containers, reduces the risk
+              of security vulnerabilities, and makes it easier to share your
+              images with others.
+            </p>
+          </section>
+          <section>
+            <h2>Use Environment Variables for Configuration</h2>
+            <p>
+              Avoid hardcoding configuration values in your Dockerfiles.
+              Instead, use environment variables to store configuration values,
+              which makes it easier to manage different environments.
+            </p>
+          </section>
+          <section>
+            <h2>Keep Your Dockerfiles Complexity Low</h2>
+            <p>
+              Dockerfiles are the blueprint for your containers, and it's
+              important to keep them as simple as possible. Avoid using complex
+              shell scripts, and instead focus on using Docker's built-in
+              commands to create a clean and easy-to-follow image.
+            </p>
+          </section>
+          <section>
+            <h2>Use Docker Compose for Multi-Container Applications</h2>
+            <p>
+              If your application requires multiple containers to run, use
+              Docker Compose to manage the containers. Docker Compose makes it
+              easy to define and manage multi-container applications, reducing
+              the risk of configuration issues.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <h2>Conclusion</h2>
+          <p>
+            Docker is a powerful tool for local development, offering a range of
+            benefits including consistent development environments, easy
+            configuration and deployment, improved resource management, and
+            reduced overhead.
+          </p>
+          <p>
+            With its growing popularity, Docker is rapidly becoming an essential
+            tool for developers looking to streamline their workflow and improve
+            the quality of their code.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script>
+      // Also available as an ES module, see:
+      // https://revealjs.com/initialization/
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealZoom],
+      });
+    </script>
+  </body>
+</html>
